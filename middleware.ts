@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
   const ua = request.headers.get("user-agent") ?? "";
 
   if (MOBILE_UA.test(ua)) {
-    return NextResponse.redirect(new URL("/", request.url));
+    return NextResponse.redirect(new URL("/home", request.url));
   }
 
   return NextResponse.next();
