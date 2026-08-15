@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import InviteDecor from "./InviteDecor";
 import InviteDownload from "./InviteDownload";
 import TypingName from "./TypingName";
@@ -53,7 +54,9 @@ export default function InviteProfilePage() {
 
         <div className="invite-content">
           <p className="invite-kicker">Special Party Invitation</p>
-          <TypingName />
+          <Suspense fallback={<p className="invite-script">&nbsp;</p>}>
+            <TypingName />
+          </Suspense>
           <div className="invite-divider" aria-hidden="true" />
           <h1 className="invite-title">You&apos;re Invited</h1>
           <h2 className="invite-cta">RSVP Now &amp; Instructions</h2>
